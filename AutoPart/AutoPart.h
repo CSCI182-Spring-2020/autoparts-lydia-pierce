@@ -4,7 +4,7 @@
 #include "BasePart.h"
 using namespace std;
 
-class AutoPart : BasePart
+class AutoPart : public BasePart
 {
 //private:
     // string _PartDescription = "";
@@ -15,7 +15,7 @@ public:
 
     AutoPart(int partNo, string partDescription, int partMaker) : BasePart(partNo)
     {
-        //   _PartNo = partNo;
+        _PartNo = partNo;
         _PartDescription = partDescription;
         _PartMaker = partMaker;
         cout << "In AutoPart Constructor: " << _PartDescription << endl;

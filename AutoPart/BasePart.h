@@ -8,10 +8,10 @@ class BasePart
 // private:
 
 protected:
-    // int _PartNo = 0;
+   int _PartNo = 0;
  
 public:
-    int _PartNo = 0;
+//    int _PartNo = 0;
 
     BasePart(int PartNo)
     {
@@ -24,6 +24,6 @@ public:
     }
 
     // Set the class to always have to be overridden
-    // virtual void PrintPart() = 0;
+    virtual void PrintPart() = 0;
 };
 

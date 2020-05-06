@@ -13,22 +13,22 @@ v2.0 2/19/2020
 using namespace std;
 
 
-void EnginePart::PrintPart()
-{
-    cout << _EngineSpecNo << "\t" << BasePart::_PartNo << "\t" << AutoPart::_PartMaker << "\t" << AutoPart::_PartDescription << endl;
-}
+
 
 int main()
 {
     // BasePart bp(20);
 
     // Create part on the stack
+    cout << "Create a part on the stack." << endl;
     EnginePart part(38, 5, "Steering Wheel", 243);
     part.PrintPart();
 
     // Create part on the heap
+    cout << endl << "Create a part on the heap." << endl;
     EnginePart* pHeapPart = new EnginePart(39, 6, "Gear Shift", 500);
     pHeapPart->PrintPart();
+    cout << endl;
     delete pHeapPart;
 
 }
